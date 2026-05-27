@@ -39,12 +39,18 @@ img {
 }
 
 .eyebrow {
+  display: inline-block;
   margin: 0 0 0.9rem;
   color: #b9eee6;
   font-size: 0.92rem;
   font-weight: 720;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.eyebrow:hover {
+  color: var(--accent-dark);
 }
 
 h1,

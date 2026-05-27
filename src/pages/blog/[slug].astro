@@ -25,7 +25,7 @@ const formatDate = (date: Date) =>
 <BaseLayout title={post.data.title} description={post.data.description}>
   <main>
     <header class="article-hero">
-      <p class="eyebrow">Essay</p>
+      <a class="eyebrow" href="/">Back to Index</a>
       <h1>{post.data.title}</h1>
       {post.data.subtitle && <p class="article-subtitle">{post.data.subtitle}</p>}
       <p class="article-meta">
