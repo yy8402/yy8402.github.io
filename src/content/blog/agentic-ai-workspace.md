@@ -1,7 +1,7 @@
 ---
 title: "From Chatbot to Agentic Endpoint, and Beyond"
 subtitle: "A Perspective on the Agentic AI Workspace"
-description: ""
+description: "A Perspective on the Agentic AI Workspace"
 publishDate: 2026-05-27
 tags:
   - AI

@@ -7,11 +7,12 @@ interface Props {
 }
 
 const {
-  title = "Yuyang Yang",
+  title = "yy8402@github",
   description = "Notes on AI workspaces, software architecture, and applied engineering.",
 } = Astro.props;
 
-const pageTitle = title === "Yuyang Yang" ? title : `${title} | Yuyang Yang`;
+const siteTitle = "yy8402@github";
+const pageTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
 ---
 
 <!doctype html>
@@ -27,7 +28,7 @@ const pageTitle = title === "Yuyang Yang" ? title : `${title} | Yuyang Yang`;
     <slot />
     <footer class="site-footer">
       <a href="https://github.com/yy8402" rel="me noopener" target="_blank">
-        yy8402 @ GitHub
+        yy8402@github
       </a>
     </footer>
   </body>
