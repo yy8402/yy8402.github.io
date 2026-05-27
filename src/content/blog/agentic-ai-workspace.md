@@ -410,30 +410,74 @@ Eventually, the workspace becomes agent-native.
 
 My AI workflow still starts with chat because chat is the simplest way to think with AI.
 
-For conversation-centered work, the Chat / Command Layer may simply call an AI model service. For bounded execution, it may use a server-side, command-layer, or endpoint-side sandbox. When the work requires persistent local processing, installed apps, private data, configured networks, credentials, and durable state, the request should be delegated to a Primary Agent operating on an Agentic Endpoint.
+For conversation-centered work, the **Chat / Command Layer** may call an AI model service directly. That is enough for reasoning, drafting, summarizing, planning, explaining, comparing options, or producing lightweight artifacts.
 
-That is the core architecture:
+When the work requires bounded computation, uploaded-file analysis, transformation, charting, preview generation, or temporary code execution, the request may use an **Execution Sandbox**. That sandbox may be attached to the model service, embedded in the command layer or Agent App, or launched on an endpoint. The sandbox is the bounded execution room.
+
+But when the work requires persistent files, repositories, installed apps, shell commands, credentials, browser sessions, private services, configured networks, or durable state, the request needs more than chat and more than a temporary sandbox. It needs a **Primary Agent** operating on an **Agentic Endpoint**.
+
+That is the core operating model:
 
 ```text
-Chat / Command Layer = interaction and routing
+Chat / Command Layer = human interaction and routing
 AI model service = direct reasoning and generation
 Execution Sandbox = bounded temporary execution
 Primary Agent = delegated operator
 Agentic Endpoint = durable working environment
 ```
 
-The command layer can be merged into the Primary Agent product experience, or it can be a standalone app, mobile interface, web portal, CLI, IDE extension, or enterprise control plane. The packaging can vary. The architecture remains clear.
+The command layer can be merged into the Primary Agent product experience, or it can be a standalone app, mobile interface, web portal, CLI, IDE extension, Slack bot, or enterprise control plane. The packaging can vary. The architectural distinction remains clear: the command layer is how humans interact and route work; the Primary Agent is what drives endpoint-centered work; the Agentic Endpoint is where persistent work happens.
 
-The Primary Agent is the driving force on the Agentic Endpoint. It is the agent that receives delegated authority to plan, call models, use tools, launch sandboxes, operate apps, manage state, follow policy, request approvals, and report results.
+The **Primary Agent** is the driving force on the Agentic Endpoint. It receives delegated authority to plan, call models, use tools, launch sandboxes, operate apps, manage state, follow policy, request approvals, and report results.
 
-The Agentic Endpoint is not just a machine with an AI tool installed. It is a persistent, configured place where agentic work can happen with files, apps, tools, networks, services, state, permissions, and policy boundaries.
+The **Agentic Endpoint** is not just a machine with an AI tool installed. It is a persistent, configured, agent-operable environment where real work can happen with files, apps, tools, networks, services, credentials, state, permissions, and policy boundaries.
 
-For enterprises, these endpoints must become managed. They need installation, updates, security, identity, governance, logging, data control, approval workflows, lifecycle management, and auditability. Once managed, they multiply into fleets across cloud, on-prem, VPC, desktop, and specialized environments.
+For individuals, that endpoint may be a laptop, Mac mini, cloud VM, desktop, or server. For enterprises, it must become a **Managed Agentic Endpoint**: enrolled, installed, updated, secured, governed, monitored, and auditable.
 
-And once there is a fleet, the direction becomes clear.
+Once enterprises manage one endpoint, they will manage many. Different teams, projects, workflows, data zones, and compliance boundaries will need different endpoint types. That creates a **Fleet of Managed Agentic Endpoints**: a governed map of users, groups, agents, endpoints, apps, data, networks, sandboxes, permissions, approvals, and audit trails.
 
-The future workspace must first become agent-friendly, and eventually agent-native.
+At that point, the architecture is no longer just about one agent or one endpoint. It becomes a workspace problem.
 
-The AI workspace is not just where humans talk to AI.
+An **Agent-Friendly Workspace** dynamically provides governed access to models, sandboxes, apps, services, data, workflows, command layers, and Agentic Endpoints. It adapts today’s human-native workspace so agents can operate safely within it.
+
+An **Agent-Native Workspace** goes further. It is designed from the ground up with agents as first-class actors. It understands agent identity, agent permissions, agent sessions, endpoint assignment, task state, memory, traces, artifact lineage, human approvals, policy boundaries, and audit records.
+
+The full progression is:
+
+```text
+Chatbot Agent
+  → Execution Sandbox
+  → Primary Agent
+  → Agentic Endpoint
+  → Managed Agentic Endpoint
+  → Fleet of Managed Agentic Endpoints
+  → Agent-Friendly Workspace
+  → Agent-Native Workspace
+```
+
+This is not a rigid deployment sequence. In practice, the Chat / Command Layer, AI model services, and Execution Sandboxes may appear in different combinations. But as an architectural direction, the pattern is clear: AI work starts with conversation, gains bounded execution, moves toward delegated agents operating durable endpoints, and eventually becomes part of managed, agent-friendly, and ultimately agent-native workspace infrastructure.
+
+A more precise way to summarize the endpoint-to-workspace transition is:
+
+```text
+Agentic Endpoint:
+  the durable workplace for one agentic operating environment
+
+Managed Agentic Endpoint:
+  the governed enterprise form of that workplace
+
+Fleet of Managed Agentic Endpoints:
+  the scalable infrastructure for placing agentic work near the right apps, data, networks, and compliance boundaries
+
+Agent-Friendly Workspace:
+  the transitional workspace that lets agents operate safely across today’s systems
+
+Agent-Native Workspace:
+  the future workspace designed with agents as first-class actors
+```
+
+That is the real direction of the AI workspace.
+
+It is not only where humans talk to AI.
 
 It is where AI agents get the access, context, tools, state, permissions, boundaries, and accountability required to complete real work.
