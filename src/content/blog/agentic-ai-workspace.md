@@ -1,4 +1,13 @@
-# From Chatbots to Agentic Endpoints, and Beyond: A Perspective on the Agentic AI Workspace
+---
+title: "From Chatbot to Agentic Endpoint, and Beyond"
+subtitle: "A Perspective on the Agentic AI Workspace"
+description: ""
+publishDate: 2026-05-27
+tags:
+  - AI
+  - Agentic Workspaces
+  - System Architecture
+---
 
 Chat is the easiest way to start working with AI, but it is not where all AI work needs to happen.
 
