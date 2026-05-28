@@ -190,11 +190,23 @@ h3 {
   color: var(--muted);
 }
 
-.prose pre {
-  overflow-x: auto;
+.prose pre,
+.prose pre.astro-code {
+  overflow-x: hidden !important;
   padding: 1rem;
   background: #171717;
   color: #fffdf8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.prose pre code,
+.prose pre .line,
+.prose pre.astro-code code,
+.prose pre.astro-code .line {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .prose table {
