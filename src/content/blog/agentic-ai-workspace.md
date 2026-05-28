@@ -9,6 +9,33 @@ tags:
   - System Architecture
 ---
 
+```text
+## Executive Summary
+
+Most AI products still look like chatbots. You type something, the AI replies, and the conversation keeps going.
+
+But real work is different.
+
+Real work involves files, apps, credentials, tools, context, approvals, mistakes, retries, history, and accountability. A chatbot can help you think, but it usually does not have a real place to work. It does not always know which files matter, which tools it can use, which systems it can touch, or what should be logged for later.
+
+We are already seeing early versions of this shift. An **Execution Sandbox** gives AI a controlled place to run bounded tasks. Codex is moving beyond code generation into a workspace where AI can work across files, code, tools, memory, approvals, project context, and local or remote environments. ChatGPT is also becoming more than a chat surface, as Codex-powered workflows can be started, supervised, and governed from inside the conversation.
+
+That is why I think the next move in AI for work will be less about “better chat” and more about **how and where the work actually happens**.
+
+Some AI work can stay in the chat window. Some work should run in a temporary sandbox. But some work needs a persistent, configured endpoint where an agent can use tools, remember state, access the right data, and operate under clear rules. I call the agent a **Primary Agent** and the endpoint an **Agentic Endpoint**.
+
+As agents become more useful, companies will not just manage prompts and model outputs. They will need **Managed Agentic Endpoints** for tools, networks, permissions, data boundaries, approval flows, updates, compliance, and audit trails.
+
+And they will not stop at isolated endpoints. They will need a **Fleet of Managed Agentic Endpoints** across users, teams, apps, projects, and data zones. From there, the workspace itself starts to change: first becoming more **Agent-Friendly**, and eventually becoming **Agent-Native**.
+
+The key idea is simple:
+
+> **AI work is not location-neutral.**  
+> It needs to happen near the right tools, data, credentials, permissions, policies, state, and audit trail.
+```
+
+---
+
 Chat is the easiest way to start working with AI, but it is not where all AI work needs to happen.
 
 For reasoning, drafting, summarizing, brainstorming, and planning, the conversation itself can be the workspace. I can open a chat interface, describe what I want, iterate through ideas, and produce useful outputs without needing much more than a prompt and a response.
