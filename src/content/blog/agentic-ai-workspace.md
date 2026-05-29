@@ -42,7 +42,7 @@ For reasoning, drafting, summarizing, brainstorming, and planning, the conversat
 
 But many real tasks require more than conversation. They require files, repositories, installed tools, shell commands, credentials, private data, browser sessions, internal services, configured networks, and persistent state. Once the task crosses that boundary, the AI system needs more than a chatbot. It needs a way to route work to the right execution context.
 
-That is the shift I see in tools like ChatGPT, CodeX, and similar systems. Chat remains the most natural human interface. AI model services provide reasoning and generation. Execution sandboxes provide bounded computation. Primary Agents operate real working environments. Over time, those environments become something more specific: **Agentic Endpoints**.
+That is the shift I see in tools like ChatGPT, Codex, and similar systems. Chat remains the most natural human interface. AI model services provide reasoning and generation. Execution sandboxes provide bounded computation. Primary Agents operate real working environments. Over time, those environments become something more specific: **Agentic Endpoints**.
 
 The broader pattern looks like this:
 
@@ -237,9 +237,9 @@ Primary Agent = delegated operator for endpoint-centered work
 Agentic Endpoint = persistent working environment
 ```
 
-Tools like ChatGPT and CodeX make these patterns easy to see.
+Tools like ChatGPT and Codex make these patterns easy to see.
 
-In **CodeX-in-ChatGPT**, the user is not directly inside the working environment. The user may be on a phone, browser, or another device, but can still start work, check progress, approve an action, review a diff, or redirect the agent.
+In **Codex-in-ChatGPT**, the user is not directly inside the working environment. The user may be on a phone, browser, or another device, but can still start work, check progress, approve an action, review a diff, or redirect the agent.
 
 ```text
 User on ChatGPT / mobile / web
@@ -251,10 +251,10 @@ Primary Agent
 Remote Agentic Endpoint
 ```
 
-In **ChatGPT-in-CodeX** — a phrase I use intentionally, derived from **CodeX-in-ChatGPT** but pointing in the reverse direction — a CodeX-style coding app can also serve as a ChatGPT-like surface for conversation-only work. In this mode, the CodeX-style app is used for tasks such as reasoning through an idea, drafting text, explaining a concept, outlining an implementation approach, comparing options, planning next steps, or generating a lightweight code snippet. The request can stay in the Chat / Command Layer and go directly to an AI model service.
+In **ChatGPT-in-Codex** — a phrase I use intentionally, derived from **Codex-in-ChatGPT** but pointing in the reverse direction — a Codex-style coding app can also serve as a ChatGPT-like surface for conversation-only work. In this mode, the Codex-style app is used for tasks such as reasoning through an idea, drafting text, explaining a concept, outlining an implementation approach, comparing options, planning next steps, or generating a lightweight code snippet. The request can stay in the Chat / Command Layer and go directly to an AI model service.
 
 ```text
-User on CodeX-style app
+User on Codex-style app
   ↓
 Chat / Command Layer
   ↓
@@ -263,18 +263,18 @@ AI model service
 Answer, draft, summary, plan, code snippet, or lightweight artifact
 ```
 
-A third pattern follows naturally: **CodeX-to-CodeX**.
+A third pattern follows naturally: **Codex-to-Codex**.
 
-In this pattern, a CodeX-style app, desktop app, web portal, or enterprise command surface remotely controls or accesses a CodeX-style runtime installed on another endpoint.
+In this pattern, a Codex-style app, desktop app, web portal, or enterprise command surface remotely controls or accesses a Codex-style runtime installed on another endpoint.
 
 ```text
 User
   ↓
-CodeX-style app / web portal / enterprise command layer
+Codex-style app / web portal / enterprise command layer
   ↓
 Remote access and routing layer
   ↓
-CodeX-style app as Primary Agent on another endpoint
+Codex-style app as Primary Agent on another endpoint
   ↓
 Remote Agentic Endpoint
 ```
