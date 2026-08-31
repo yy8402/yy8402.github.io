@@ -27,6 +27,10 @@ These developments are not identical products or architectures. To us, they neve
 
 > The AI interface is becoming a workspace, and the workspace itself is becoming agentic.
 
+## In brief
+
+Cloudflare OS makes the emerging Agentic Workspace tangible: agents can work with organizational context, create persistent applications and reach enterprise systems through governed capabilities. We believe the enterprise form of this Workspace needs three foundations: data sovereignty across the complete chain of work, governed execution in approved Sites and Agentic Endpoints, and open support for approved agents under one authoritative policy and evidence boundary.
+
 ## The enterprise boundary is becoming the Workspace
 
 The importance of Cloudflare OS is not simply that it gives every employee an agent, but that it gives the agent a place within the organization: shared context, persistent work, generated applications and controlled paths to enterprise systems. Work created by an agent can become part of the organization rather than disappearing at the end of a conversation.
