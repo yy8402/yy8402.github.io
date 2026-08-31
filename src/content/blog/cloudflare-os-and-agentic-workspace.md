@@ -11,6 +11,10 @@ tags:
 draft: false
 ---
 
+## Executive Summary
+
+Cloudflare OS makes the emerging Agentic Workspace tangible: agents can work with organizational context, create persistent applications and reach enterprise systems through governed capabilities. We believe the enterprise form of this Workspace needs three foundations: data sovereignty across the complete chain of work, governed execution in approved Sites and Agentic Endpoints, and open support for approved agents under one authoritative policy and evidence boundary.
+
 Cloudflare's release of [Cloudflare OS](https://blog.cloudflare.com/cloudflare-os/) is an important event for enterprise AI. We immediately recognized in it many of the principles that had also shaped our own work on Agentic Workspace.
 
 It moves the conversation beyond models and chatbots toward a more consequential question: what kind of environment do agents need in order to participate safely in real organizational work? By open-sourcing a new version shaped by what it learned from the platform used inside Cloudflare, the company has made the emerging idea of an agentic workspace far more visible.
@@ -26,10 +30,6 @@ Cloudflare OS now makes the same larger movement visible at the organizational l
 These developments are not identical products or architectures. To us, they nevertheless point toward the same larger direction:
 
 > The AI interface is becoming a workspace, and the workspace itself is becoming agentic.
-
-## In brief
-
-Cloudflare OS makes the emerging Agentic Workspace tangible: agents can work with organizational context, create persistent applications and reach enterprise systems through governed capabilities. We believe the enterprise form of this Workspace needs three foundations: data sovereignty across the complete chain of work, governed execution in approved Sites and Agentic Endpoints, and open support for approved agents under one authoritative policy and evidence boundary.
 
 ## The enterprise boundary is becoming the Workspace
 
