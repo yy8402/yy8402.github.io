@@ -13,6 +13,7 @@ const {
 
 const siteTitle = "yy8402@github";
 const pageTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -21,6 +22,7 @@ const pageTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
