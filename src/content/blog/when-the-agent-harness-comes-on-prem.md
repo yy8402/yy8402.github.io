@@ -12,7 +12,7 @@ draft: false
 
 ## Executive Summary
 
-Anthropic’s self-hosted Claude Managed Agents private beta lets an enterprise run the agent harness and retain session history in its own cloud or on premises. It changes who operates the agent loop, not where inference necessarily runs or what the agent is authorized to do.
+The self-hosted option for Claude Managed Agents lets enterprises run the agent harness and retain session history in their own cloud or on premises. It changes who operates the agent loop, not where inference necessarily runs or what the agent is authorized to do.
 
 Our vision for Agentic Workspace is to keep those decisions tied to the work: what information may cross a Site boundary, who may observe, steer, or approve an action, and what evidence can carry forward when the agent changes. The goal is to let people and agents continue the work without inheriting access they no longer need.
 
@@ -20,7 +20,7 @@ Our vision for Agentic Workspace is to keep those decisions tied to the work: wh
 
 On November 12, 2026, Anthropic [announced a private beta for self-hosted Claude Managed Agents](https://claude.com/fr/resources/articles/self-hosted-claude-managed-agents). It moves more than the sandbox. Previously, an enterprise could run tools on its own infrastructure while Anthropic still operated the **harness**—the loop that calls the model and directs tool use. The new option lets the enterprise operate that loop and retain session history in its own cloud or on premises. [Inference remains a separate choice](https://platform.claude.com/docs/en/managed-agents/self-hosted-data-and-access): prompts and tool results can still reach the configured model provider.
 
-Anthropic’s beta is a concrete example of a pattern we proposed for OpenAI’s Agents API in [*When the Agent Harness Becomes a Service*](https://yy8402.github.io/blog/agents-api-and-enterprise-workspace/): an organization could operate a shared harness within an approved **Site**, an operating boundary for execution and data locality. Where tools run, who operates the agent loop, and where inference happens are separate decisions. **The enterprise still has to approve a supported combination for the task—and decide what the agent may do with it.**
+The self-hosted option for Claude Managed Agents is a concrete example of a deployment pattern we proposed for OpenAI’s Agents API in [*When the Agent Harness Becomes a Service*](https://yy8402.github.io/blog/agents-api-and-enterprise-workspace/): an organization could operate a shared harness within an approved **Site**, an operating boundary for execution and data locality. Where tools run, who operates the agent loop, and where inference happens are separate decisions. **The enterprise still has to approve a supported combination for the task—and decide what the agent may do with it.**
 
 ## From a place to work to authority over the work
 
@@ -28,11 +28,11 @@ In [*From Chatbot to Agentic Endpoint, and Beyond*](https://yy8402.github.io/blo
 
 In [*Cloudflare OS and the Agentic Workspace Taking Shape*](https://yy8402.github.io/blog/cloudflare-os-and-agentic-workspace/), we argued that governance has to follow the work into those environments. Permission to talk to an agent or connect an application does not tell us whether the agent may read a particular record, send its contents elsewhere, or change it.
 
-Our [Muse/dots essay](https://yy8402.github.io/blog/muse-dots-and-agentic-workspace/) showed why those decisions need to follow the task, not just the person or agent. The same person might investigate a bug in a development Endpoint, then validate a fix in a different Site where protected test data resides. A shared harness can run within a Site, but its presence there does not grant access to the Site’s resources. What the agent can do depends on what the enterprise authorizes for that task.
+Our essay [*When the Agent Takes on an Ongoing Role*](https://yy8402.github.io/blog/muse-dots-and-agentic-workspace/) showed why those decisions need to follow the task, not just the person or agent. The same person might investigate a bug in a development Endpoint, then validate a fix in a different Site where protected test data resides. A shared harness can run within a Site, but its presence there does not grant access to the Site’s resources. What the agent can do depends on what the enterprise authorizes for that task.
 
 ## One supplier task, two decisions
 
-Return to the supplier example from the Agents API essay. A procurement analyst wants to compare supplier performance and prepare a recommendation. The source records are inside an approved Site. In this hypothetical case, policy permits selected aggregates to be sent to an external model, but not raw records or identifiable excerpts.
+Return to the supplier example from [the Agents API essay](https://yy8402.github.io/blog/agents-api-and-enterprise-workspace/). A procurement analyst wants to compare supplier performance and prepare a recommendation. The source records are inside an approved Site. In this hypothetical case, policy permits selected aggregates to be sent to an external model, but not raw records or identifiable excerpts.
 
 The first decision is **how the analysis may run**. A Site-operated harness could invoke a narrowly scoped operation that computes the metrics where the records reside. Only results approved for that model destination would leave the Site; aggregation alone does not make a result safe to send. The external model could compare those metrics under non-identifying labels. The analyst would review the comparison and resolve the labels inside the Site before making a recommendation about a named supplier.
 
